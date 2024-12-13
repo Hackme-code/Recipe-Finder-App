@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Search Section */
+#search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+#recipesearch {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #6c757d;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#searchrecipe {
+    padding: 10px 20px;
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchrecipe:hover {
+    background-color: #5a379d;
+}
+
+/* Results Section */
+#storeresults {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+#title {
+    font-size: 1.8rem;
+    color: #495057;
+    margin-bottom: 1rem;
+}
+
+#brief {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#details {
+    font-size: 1.2rem;
+    color: #6c757d;
+    text-align: center;
+    max-width: 600px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    #recipesearch {
+        width: 200px;
+    }
+
+    #image {
+        width: 100%;
+        height: auto;
+    }
+}
